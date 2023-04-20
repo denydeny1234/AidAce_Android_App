@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+
+  <ImageView
+      android:id="@+id/settingsBack"
+      android:layout_width="145dp"
+      android:layout_height="58dp"
+      android:onClick="navigateToNewActivity"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.10"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      app:srcCompat="@drawable/aidace_settings"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+  <TextView
+      android:id="@+id/first_main_box"
+      android:layout_width="322dp"
+      android:layout_height="150dp"
+      android:background="@drawable/box"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.19" />
+
+
+  <TextView
+      android:id="@+id/settings_privacy_main"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Privacy"
+      android:textColor="#56FFFFFF"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.17"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.110000014" />
+
+  <ImageView
+      android:id="@+id/settings_whiteline1"
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box"
+      app:layout_constraintVertical_bias="0.31"
+      app:srcCompat="@drawable/white_line" />
+
+  <ImageView
+      android:id="@+id/settings_whiteline2"
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box"
+      app:layout_constraintVertical_bias="0.65"
+      app:srcCompat="@drawable/white_line" />
+
+  <TextView
+      android:id="@+id/privacy_settings_text1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Download personal data"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box"
+      app:layout_constraintHorizontal_bias="0.15"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box"
+      app:layout_constraintVertical_bias="0.13" />
+
+  <TextView
+      android:id="@+id/privacy_settings_text3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Erase personal data"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box"
+      app:layout_constraintHorizontal_bias="0.13"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box"
+      app:layout_constraintVertical_bias="0.84000003" />
+
+  <TextView
+      android:id="@+id/privacy_settings_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Erase personal data"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box"
+      app:layout_constraintHorizontal_bias="0.13"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box"
+      app:layout_constraintVertical_bias="0.47000003" />
+
+  <TextView
+      android:id="@+id/settings_general_main"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="General"
+      android:textColor="#56FFFFFF"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.17"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.40" />
+
+  <TextView
+      android:id="@+id/settings_information_main"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Information"
+      android:textColor="#56FFFFFF"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.17"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.77" />
+
+  <TextView
+      android:id="@+id/first_main_box9"
+      android:layout_width="322dp"
+      android:layout_height="200dp"
+      android:background="@drawable/box"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.61" />
+
+  <TextView
+      android:id="@+id/first_main_box10"
+      android:layout_width="322dp"
+      android:layout_height="90dp"
+      android:background="@drawable/box"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.90999997" />
+
+  <ImageView
+      android:id="@+id/settings_whiteline6"
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box9"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box9"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box9"
+      app:layout_constraintVertical_bias="0.24"
+      app:srcCompat="@drawable/white_line" />
+
+  <ImageView
+      android:id="@+id/settings_whiteline7"
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box9"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box9"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box9"
+      app:layout_constraintVertical_bias="0.51"
+      app:srcCompat="@drawable/white_line" />
+
+  <ImageView
+      android:id="@+id/settings_whiteline8"
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box9"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box9"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box9"
+      app:layout_constraintVertical_bias="0.76"
+      app:srcCompat="@drawable/white_line" />
+
+  <ImageView
+      android:id="@+id/settings_whiteline9"
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box10"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box10"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box10"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box10"
+      app:layout_constraintVertical_bias="0.50"
+      app:srcCompat="@drawable/white_line" />
+
+  <TextView
+      android:id="@+id/settings_general_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Units of measurement"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box9"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box9"
+      app:layout_constraintHorizontal_bias="0.13"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box9"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box9"
+      app:layout_constraintVertical_bias="0.10" />
+
+  <TextView
+      android:id="@+id/settings_general_text2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Notifications"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box9"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box9"
+      app:layout_constraintHorizontal_bias="0.10"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box9"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box9"
+      app:layout_constraintVertical_bias="0.37" />
+
+  <TextView
+      android:id="@+id/settings_general_text3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Location information"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box9"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box9"
+      app:layout_constraintHorizontal_bias="0.12"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box9"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box9"
+      app:layout_constraintVertical_bias="0.66" />
+
+  <TextView
+      android:id="@+id/settings_general_text4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Accessories"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box9"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box9"
+      app:layout_constraintHorizontal_bias="0.10"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box9"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box9"
+      app:layout_constraintVertical_bias="0.91" />
+
+  <TextView
+      android:id="@+id/settings_information_text"
+      android:textColor="@color/white"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="About AidAce"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box10"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box10"
+      app:layout_constraintHorizontal_bias="0.11"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box10"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box10"
+      app:layout_constraintVertical_bias="0.17" />
+
+  <TextView
+      android:id="@+id/settings_information_text2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Contact us"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/first_main_box10"
+      app:layout_constraintEnd_toEndOf="@+id/first_main_box10"
+      app:layout_constraintHorizontal_bias="0.11"
+      app:layout_constraintStart_toStartOf="@+id/first_main_box10"
+      app:layout_constraintTop_toTopOf="@+id/first_main_box10"
+      app:layout_constraintVertical_bias="0.81" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
